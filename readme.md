@@ -9,24 +9,27 @@ The ring counter is a type of counter composed of flipflops connected into a shi
 
 The sequence of output from the three-bit ring counter is: 
 
-![](https://i.imgur.com/kRH7WaT.jpg)
-
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/kRH7WaT.jpg">
+</p>
 
 # Demo Description            
 
-![](https://i.imgur.com/R3jrhXA.jpg)
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/R3jrhXA.jpg">
+  <br>Figure 1: Block diagram of three-bit Ring Counter <br>
+</p>
                        
-**Figure 1:Block diagram of three-bit Ring Counter**{width=auto height=auto align=center}
-
 In this example,
 * The AVR128DA48 Curiosity Nano board from Microchip is used to realize the 3-bit Ring Counter.
 * To realize 3-bit Ring Counter, 3 D flip-flops are required. A pair of LUTs is needed to realize one D flip-flop. All the 6 LUTs are used to realize 3 D flip-flops.
 * LUT0 and LUT1 are configured together as D flip-flop 0, LUT2 and LUT3 are configured together as D flip-flop 1, and LUT4 and LUT5 are configured together as D flip-flop 2.
 * These three D flip-flops are cascaded in such a way that output of D flip-flop 0 is fed to the input of D flip-flop 1, D flip-flop 1 output is fed to the D flip-flop 2 input and, D flip-flop 2 output is fed to the D flip-flop 0 input through Event system, to complete the required ring counter circuit as shown in below figure. 
- 
-![](https://i.imgur.com/rkWOAJF.jpg)
 
-**Figure 2:Cascaded connections of three D-flipflops**
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/rkWOAJF.jpg">
+  <br>Figure 2:Cascaded connections of three D-flipflops <br>
+</p> 
 
 * The even LUTs (i.e. LUT0/LUT2/LUT4) are configured to produce custom logic gate. The output of the Timer B, which is used as a clock signal is applied only to even LUTs. 
 * All three inputs (i.e. Input (GPIO), Timer B (CLK), feedback of LUT4) is fed only to the first flipflop of LUT0 and value 0XEE is loaded in the truth table.
@@ -41,6 +44,9 @@ In this example,
 * The on-board indication LED blinks, whenever a switch (SW0) press event is reported. 
 * The 3-bit ring counter data gets transferred to the terminal window of  data visualizer tool through mEDBG of the AVR128DA48 Curiosity Nano board.
 
+<p align="center">
+  <img width=auto height=auto src="https://www.youtube.com/watch?v=BYyyZrUc0Wo"> 
+</p> 
 
 # Hardware
 
@@ -49,9 +55,8 @@ Curiosity Nano boards features a variety of PIC® and AVR® MCUs, allowing rapid
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/WM8mRfR.jpg">
+  <br>Figure 3:AVR128DA48 Curiosity Nano board<br>
 </p>
-
-**Figure 3:AVR128DA48 Curiosity Nano board**
 
 # Software Tools
 Microchip’s IDEs, compiler and graphical code generators are used throughout the application firmware development to provide an easy and hassle-free user experience. Following are the tools which are used for this demo application:
@@ -162,7 +167,7 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 </p>
 
 5.  Open **PINMUX** configuration by clicking on![](https://i.imgur.com/CURVoP9.jpg) icon in the navigation tab, located on the left side of the window.
-          * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
+       * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/mC6wlSX.jpg">
@@ -202,7 +207,7 @@ open the **ADD SOFTWARE COMPONENTS** window by clicking![](https://i.imgur.com/X
 * Close CLOCK SETTINGS by clicking the **Close** button.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/u3L82IZ.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/hnuZkL8.jpg?2">
 </p>
 
 # Timer B Configuration:
@@ -261,7 +266,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Select **D Flipflop** option from the dropdown menu against the **SEQSEL0: Sequential Selection 0, SEQSEL1: Sequential Selection 1, SEQSEL2: Sequential Selection 2**.
 
 <p align="center">
-  <img width=600 height=auto src="https://i.imgur.com/x2oFQkN.jpg">
+  <img width=600 height=auto src="https://i.imgur.com/x2oFQkN.jpg?1">
 </p>
 
 ### Configurations to be done for LUT0:
