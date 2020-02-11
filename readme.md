@@ -44,9 +44,7 @@ In this example,
 * The on-board indication LED blinks, whenever a switch (SW0) press event is reported. 
 * The 3-bit ring counter data gets transferred to the terminal window of  data visualizer tool through mEDBG of the AVR128DA48 Curiosity Nano board.
 
-<p align="center">
-  <img width=auto height=auto src="https://www.youtube.com/watch?v=BYyyZrUc0Wo"> 
-</p> 
+[![java](https://img.youtube.com/vi/BYyyZrUc0Wo/0.jpg)](https://www.youtube.com/watch?v=BYyyZrUc0Wo)
 
 # Hardware
 
@@ -173,13 +171,13 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
   <img width=auto height=auto src="https://i.imgur.com/mC6wlSX.jpg">
 </p>
 
-* Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
+       * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/GXHCbAy.jpg">
 </p>
 
-Configure pin **PA1** in output mode and feed as input signal to the first flipflop.
+       * Configure pin **PA1** in output mode and feed as input signal to the first flipflop.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/QVnFtH9.jpg">
@@ -202,12 +200,12 @@ open the **ADD SOFTWARE COMPONENTS** window by clicking![](https://i.imgur.com/X
   <img width=auto height=auto src="https://i.imgur.com/EeNF7m4.jpg">
 </p>
 
-* Configure the **Main Clock (CLK_MAIN)** clock source by clicking **CLOCK SETTINGS**![](https://i.imgur.com/Im6tH2w.jpg)icon as shown in the above figure.
-* Check **Prescaler Enable** and set the **Prescaler division** value to **4** from the drop-down menu, which generates 1MHz frequency as a main clock, as shown in the below figure.
-* Close CLOCK SETTINGS by clicking the **Close** button.
+       * Configure the **Main Clock (CLK_MAIN)** clock source by clicking **CLOCK SETTINGS**![](https://i.imgur.com/Im6tH2w.jpg)icon as shown in the above figure.
+       * Check **Prescaler Enable** and set the **Prescaler division** value to **4** from the drop-down menu, which generates 1MHz frequency as a main clock, as shown in the below figure.
+       * Close CLOCK SETTINGS by clicking the **Close** button.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/hnuZkL8.jpg?2">
+  <img width=auto height=auto src="https://i.imgur.com/gFIhhVS.jpg">
 </p>
 
 # Timer B Configuration:
@@ -266,7 +264,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Select **D Flipflop** option from the dropdown menu against the **SEQSEL0: Sequential Selection 0, SEQSEL1: Sequential Selection 1, SEQSEL2: Sequential Selection 2**.
 
 <p align="center">
-  <img width=600 height=auto src="https://i.imgur.com/x2oFQkN.jpg?1">
+  <img width=600 height=auto src="https://i.imgur.com/uMaP7dk.jpg">
 </p>
 
 ### Configurations to be done for LUT0:
@@ -279,7 +277,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH0: Truth 0** as **238** (or 0XEE).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/PLxHQdh.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/gmHiJOV.jpg">
 </p>
 
 ### Configurations to be done for LUT1:
@@ -288,7 +286,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH1: Truth 1** as **16** (or 0X10).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/UxTIDQE.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/rXWEtkJ.jpg">
 </p>
 
 ### Configurations to be done for LUT2:
@@ -300,7 +298,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH2: Truth 2** as **204** (or 0xCC).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/74Pd9n5.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/2CORspX.jpg">
 </p>
 
 ### Configurations to be done for LUT3:
@@ -309,7 +307,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH3: Truth 3** as **16** (or 0X10).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/giFxPFb.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/p5K8amh.jpg">
 </p>
 
 ### Configurations to be done for LUT4:
@@ -321,7 +319,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH4: Truth 4** as **204** (or 0xCC).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/wpY3Ggv.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/VwD5EVU.jpg">
 </p>
 
 ### Configurations to be done for LUT5:
@@ -330,7 +328,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH5: Truth 5** as **16** (or 0X10).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/enwP0Ni.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/EaEFNQ5.jpg">
 </p>
 
 
