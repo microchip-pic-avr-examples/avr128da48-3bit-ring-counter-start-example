@@ -15,12 +15,8 @@ The sequence of output from the three-bit ring counter is:
 # Demo Description            
 
 ![](https://i.imgur.com/R3jrhXA.jpg)
-
-<p align="center">
-  <img width=auto height=auto src="Figure 1:Block diagram of three-bit Ring Counter">
-</p>
                        
-**Figure 1:Block diagram of three-bit Ring Counter**
+**Figure 1:Block diagram of three-bit Ring Counter**{width=auto height=auto align=center}
 
 In this example,
 * The AVR128DA48 Curiosity Nano board from Microchip is used to realize the 3-bit Ring Counter.
@@ -61,6 +57,7 @@ Curiosity Nano boards features a variety of PIC® and AVR® MCUs, allowing rapid
 Microchip’s IDEs, compiler and graphical code generators are used throughout the application firmware development to provide an easy and hassle-free user experience. Following are the tools which are used for this demo application:
 * Atmel Studio v 7.0.2397
 * Atmel | START v 1.6.1894
+
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
 # Atmel | START Project Creation
@@ -137,21 +134,22 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 
 # Conclusion:
 This example demonstrates configuration and usage of CIP’s (Core Independent Peripherals), such as CCL and Event System in the application. This example also explains realization of 3-bit Ring Counter using all the 6 LUTs  of CCL peripheral available on the AVR128DA48 MCU. 
+
   The usage of CCL peripheral provides predictable response time, reduces firmware complexity and offers component integrity by allowing sequential logic gates realization without the need for on-board Programmable Logic Devices (PLDs). Thereby reducing BOM cost and speed up time to market for the new products. 
 
 # Appendix:  Atmel | START Project Creation
 
 Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripherals and generate project in Atmel|START. Follow the below steps to generate the project in Atmel|START.
 
-**1.**  Open **Atmel Studio 7**.
-**2.**  Go to **File → New** and click on **Atmel Start Project** option.
-**3.**  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
+1.  Open **Atmel Studio 7**.
+2.  Go to **File → New** and click on **Atmel Start Project** option.
+3.  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/CzNdtch.jpg">
 </p>
 
-**4.**	After project creation,**MY SOFTWARE COMPONENTS** window opens. Rename the project by clicking on **MY PROJECT** in the **MY SOFTWARE COMPONENTS** window and then click on **Rename Component** as shown in Figure below.
+4.  After project creation,**MY SOFTWARE COMPONENTS** window opens. Rename the project by clicking on **MY PROJECT** in the **MY SOFTWARE COMPONENTS** window and then click on **Rename Component** as shown in Figure below.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/0XkCOeL.jpg">
@@ -163,37 +161,37 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
   <img width=auto height=auto src="https://i.imgur.com/JSBMetO.jpg">
 </p>
 
-**5.**	Open **PINMUX** configuration by clicking on![](https://i.imgur.com/CURVoP9.jpg) icon in the navigation tab, located on the left side of the window.
-          *   Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
+5.  Open **PINMUX** configuration by clicking on![](https://i.imgur.com/CURVoP9.jpg) icon in the navigation tab, located on the left side of the window.
+          * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/mC6wlSX.jpg">
 </p>
 
-* Pin PC7 is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
+* Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/GXHCbAy.jpg">
 </p>
 
-Configure pin PA1 in output mode and feed as input signal to the first flipflop.
+Configure pin **PA1** in output mode and feed as input signal to the first flipflop.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/QVnFtH9.jpg">
 </p>
 
-**6.**	Add Timer, Event system, USART and CCL peripheral drivers to the project
-           * Click![](https://i.imgur.com/7nFD1Ih.jpg) icon in the navigation tab, located on the left side of the window. Then, 
+6.  Add Timer, Event system, USART and CCL peripheral drivers to the project
+       * Click![](https://i.imgur.com/7nFD1Ih.jpg) icon in the navigation tab, located on the left side of the window. Then, 
 open the **ADD SOFTWARE COMPONENTS** window by clicking![](https://i.imgur.com/Xwfz8pQ.jpg) icon.
-           * Expand Drivers by clicking + icon.
-           * To add respective drivers to the project  select Timer, Event System, CCL, USART and click on![](https://i.imgur.com/fPgSlm2.jpg) icon.
-           * Add the respective drivers to the project by clicking the Add component(s).
+       * Expand Drivers by clicking + icon.
+       * To add respective drivers to the project  select Timer, Event System, CCL, USART and click on![](https://i.imgur.com/fPgSlm2.jpg) icon.
+       * Add the respective drivers to the project by clicking the Add component(s).
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/r5g29cX.jpg">
 </p>
 
-**7.**	Open the **CLOCK CONFIGURATOR** window by clicking![](https://i.imgur.com/8Nw4IRC.jpg) CLOCKS icon in the navigation tab, located at the left side of the window as shown in the below Figure.
+7. Open the **CLOCK CONFIGURATOR** window by clicking![](https://i.imgur.com/8Nw4IRC.jpg) CLOCKS icon in the navigation tab, located at the left side of the window as shown in the below Figure.
 
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/EeNF7m4.jpg">
