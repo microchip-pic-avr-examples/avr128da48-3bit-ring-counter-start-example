@@ -73,7 +73,7 @@ Refer Appendix section for step by step instructions to configure the project th
 3.	Go to Tools -> Device Programming.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/JBYbb1x.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/kadRx4W.jpg">
 </p>
 
 4.	Select the Tool and click Apply.  
@@ -149,13 +149,13 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 3.  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/CzNdtch.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/9yZrXFR.jpg">
 </p>
 
 4.  After project creation,**MY SOFTWARE COMPONENTS** window opens. Rename the project by clicking on **MY PROJECT** in the **MY SOFTWARE COMPONENTS** window and then click on **Rename Component** as shown in Figure below.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/0XkCOeL.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/JTAgcuG.jpg">
 </p>
 
 * The **RENAME COMPONENT** window appears and specify the new project name as **“THREE_BIT_RING_COUNTER”** and click rename as shown in figure below.
