@@ -79,19 +79,19 @@ Refer Appendix section for step by step instructions to configure the project th
 4.	Select the Tool and click Apply.  
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/5pkBCkF.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/oQ1zXHd.jpg">
 </p>
 
 5.	Go to Memories tab and click on browse(…) button for Flash as shown in image below. Browse the location of the downloaded hex file and load the program.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/Ke0KhGc.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/m2lJfLR.jpg">
 </p>
 
 6.	Click Program and wait for finishing.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/sFzQvWG.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/RllbjOu.jpg">
 </p>
 
 # Steps to open Terminal window in Data Visualizer:
@@ -168,19 +168,19 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
        * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/32Z87il.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/kjsVuay.jpg">
 </p>
 
 * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/IiW3zZY.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/ivjWZCz.jpg">
 </p>
 
 * Configure pin **PA1** in output mode and feed as input signal to the first flipflop.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/8cstjzV.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/8O2NWZn.jpg">
 </p>
 
 6.  Add Timer, Event system, USART and CCL peripheral drivers to the project
@@ -197,7 +197,7 @@ open the **ADD SOFTWARE COMPONENTS** window by clicking![](https://i.imgur.com/X
 7. Open the **CLOCK CONFIGURATOR** window by clicking![](https://i.imgur.com/8Nw4IRC.jpg) CLOCKS icon in the navigation tab, located at the left side of the window as shown in the below Figure.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/EeNF7m4.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/R8JaeBK.jpg">
 </p>
 
 * Configure the **Main Clock (CLK_MAIN)** clock source by clicking **CLOCK SETTINGS**![](https://i.imgur.com/Im6tH2w.jpg)icon as shown in the above figure.
@@ -216,7 +216,7 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Select **PB4** as output from the dropdown menu against the **WO/0** field.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/ujInwit.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/cKLEADp.jpg">
 </p>
 
 * Check the **Enable** option to enable the TCB2 module.
@@ -239,7 +239,7 @@ USART1 is used to transmit the three states of the ring counter on the terminal 
 * Select **PC0** as output from the dropdown menu against the **TXD** field.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/YTS8Pyc.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/64adlVy.jpg">
 </p>
 
 * Check the **Printf support** option, which allows to print a sequence of characters.
@@ -310,7 +310,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 ### Configurations to be done for LUT1:
 * Select checkbox **LUTEN: LUT Enable** under **LOOKUP TABLE 1 CONFIGURATION**.
-* Select **IO pin LUTn-IN2 input source** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.
+* Select **IO pin LUTn-IN2 input source** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.PC2 pin is configured as an input and pull-up option is enabled which feeds a logic “1” signal to the LUT1.
 * Enter truth table value **TRUTH1: Truth 1** as **16** (or 0X10).
 
 <p align="center">
@@ -321,8 +321,8 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Select checkbox **LUTEN: LUT Enable** under **LOOKUP TABLE 2 CONFIGURATION**.
 * Select checkbox **OUTEN: Output Enable** under **LOOKUP TABLE 2 CONFIGURATION**.
 * Select **IN [2] is clocking the LUT** option from the dropdown menu against the **CLKSRC: Clock Source Selection**.
-* Select **Event input source B** option from the dropdown menu against **INSEL1: LUT Input 1 Source Selection**.
-* Select **Event input source A** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.
+* Select **Event input source B** option from the dropdown menu against **INSEL1: LUT Input 1 Source Selection**.The output of the D-flipflop 0 (LUT 4) is given as input to the D-flipflop 1 through Event System, which is named as EVENT B.
+* Select **Event input source A** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.The Single pulse generated by Timer B, which is used as a clock signal is fed to the LUT0 through Event System, which is named as EVENT A.
 * Enter truth table value **TRUTH2: Truth 2** as **204** (or 0xCC).
 
 <p align="center">
@@ -331,7 +331,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 ### Configurations to be done for LUT3:
 * Select checkbox **LUTEN: LUT Enable** under **LOOKUP TABLE 3 CONFIGURATION**.
-* Select **IO pin LUTn-IN2 input source** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.
+* Select **IO pin LUTn-IN2 input source** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.PF2 pin is configured as an input and pull-up option is enabled which feeds a logic “1” signal to the LUT3.
 * Enter truth table value **TRUTH3: Truth 3** as **16** (or 0X10).
 
 <p align="center">
@@ -342,8 +342,8 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Select checkbox **LUTEN: LUT Enable** under **LOOKUP TABLE 4 CONFIGURATION**.
 * Select checkbox **OUTEN: Output Enable** under **LOOKUP TABLE 4 CONFIGURATION**.
 * Select **IN [2] is clocking the LUT** option from the dropdown menu against the **CLKSRC: Clock Source Selection**.
-* Select **Event input source B** option from the dropdown menu against **INSEL1: LUT Input 1 Source Selection**.
-* Select **Event input source A** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.
+* Select **Event input source B** option from the dropdown menu against **INSEL1: LUT Input 1 Source Selection**.The output of the D-flipflop 1 (LUT 4) is given as input to the D-flipflop 2 through Event System, which is named as EVENT B.
+* Select **Event input source A** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.The Single pulse generated by Timer B, which is used as a clock signal is fed to the LUT0 through Event System, which is named as EVENT A.
 * Enter truth table value **TRUTH4: Truth 4** as **204** (or 0xCC).
 
 <p align="center">
@@ -352,7 +352,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 ### Configurations to be done for LUT5:
 * Select checkbox **LUTEN: LUT Enable** under **LOOKUP TABLE 5 CONFIGURATION**.
-* Select **Event input source A** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.
+* Select **Event input source A** option from the dropdown menu against **INSEL2: LUT Input 2 Source Selection**.PA2 pin is configured as an input and pull-up option is enabled, which feeds a logic “1” signal to the LUT5 through Event system, which is named as EVENTA.
 * Enter truth table value **TRUTH5: Truth 5** as **16** (or 0X10).
 
 <p align="center">
