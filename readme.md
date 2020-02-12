@@ -214,6 +214,11 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Select **Drivers: TCB: Init** option from the dropdown menu against the **Driver** field.
 * Select **TCB2** option from the dropdown menu against the **Instance** field.
 * Select **PB4** as output from the dropdown menu against the **WO/0** field.
+
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/ujInwit.jpg">
+</p>
+
 * Check the **Enable** option to enable the TCB2 module.
 * Select **CLK_PER/2 (From Prescaler)** option from the dropdown menu against the **CLKSEL:Clock Select** field.
 * Select **Single Shot mode** option from the dropdown menu against the **CNTMODE: Timer Mode** field.
@@ -222,7 +227,7 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Check the **CAPTEI: Event Input Enable** field.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/RQXjTJs.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/WBTsm7K.jpg">
 </p>
 
 # USART1 Configuration: 
@@ -231,12 +236,14 @@ USART1 is used to transmit the three states of the ring counter on the terminal 
 * Select **Drivers: USART: Basic** option from the dropdown menu against the **Driver** field.
 * Select **USART1** option from the dropdown menu against the **Instance** field.
 * Select **PC0** as output from the dropdown menu against the **TXD** field.
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/YTS8Pyc.jpg">
+</p>
 * Check the **Printf support** option, which allows to print a sequence of characters.
 * Check the **Transmitter: Enable** option, which allows the data to transmit through USART peripheral.
 * Set the **Baud Rate** to **9600**.
-
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/gU8PY3S.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/KEikk66.jpg">
 </p>
 
 # Event System Configuration: 
@@ -259,12 +266,17 @@ In this example, event system is used to connect the output of D-flipflop 0 to t
 # CCL Configuration: 
 To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are configured together as a D-flipflop 0, LUT2 and LUT3 are configured together as a D-flipflop 1, LUT4 and LUT5 are configured together as a D-flipflop 2. Configure the CCL module by following the steps shown in the below figure.
 * Open the configuration window for CCL by clicking on **DIGITAL_GLUE_LOGIC_0**.
+<p align="center">
+  <img width=auto height=auto src="https://imgur.com/AzpJkrG">
+</p>
 * Select **LUT0_IN/1** on pin **PA1, LUT0_OUT/0** on pin **PA3, LUT0_IN/2** on pin **PC2, LUT2_OUT/0** on pin **PD3, LUT3_IN/2** on pin **PF2, LUT4_OUT/0** on pin **PB3**.
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/snRm49v.jpg">
+</p>
 * Enable peripheral by selecting checkmark **ENABLE: Enable**.
 * Select **D Flipflop** option from the dropdown menu against the **SEQSEL0: Sequential Selection 0, SEQSEL1: Sequential Selection 1, SEQSEL2: Sequential Selection 2**.
-
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/uMaP7dk.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/IY6vJch.jpg">
 </p>
 
 ### Configurations to be done for LUT0:
