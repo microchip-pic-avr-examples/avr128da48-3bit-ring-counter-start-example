@@ -230,21 +230,26 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
   <img width=auto height=auto src="https://i.imgur.com/WBTsm7K.jpg">
 </p>
 
+
 # USART1 Configuration: 
 USART1 is used to transmit the three states of the ring counter on the terminal window (i.e. First state=100/Second state=010/Third state=011). The USART1 peripheral is also used to display the instructions to the user on the terminal window. Configure the USART1 module by following the steps shown in the below figure.   
 * Open the configuration window for USART by clicking on **USART_0**.
 * Select **Drivers: USART: Basic** option from the dropdown menu against the **Driver** field.
 * Select **USART1** option from the dropdown menu against the **Instance** field.
 * Select **PC0** as output from the dropdown menu against the **TXD** field.
+
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/YTS8Pyc.jpg">
 </p>
+
 * Check the **Printf support** option, which allows to print a sequence of characters.
 * Check the **Transmitter: Enable** option, which allows the data to transmit through USART peripheral.
 * Set the **Baud Rate** to **9600**.
+
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/KEikk66.jpg">
 </p>
+
 
 # Event System Configuration: 
 In this example, event system is used to connect the output of D-flipflop 0 to the input of D-flipflop 1 and output of D-flipflop 1 to the input of D-flipflop 2 and output of D-flipflop 2 to the input of D-flipflop 0. Event system is also used to connect output of the Timer B (generates a single pulse, which is used as a clock signal) to LUT0, LUT2, LUT4.Configure the Event System module by following the steps shown in the below figure.
@@ -255,26 +260,37 @@ In this example, event system is used to connect the output of D-flipflop 0 to t
 	* Select **Connect user to event channel 3** option from the dropdown menu as event user against the **USERCCLLUT0A: User Channel 3 CCL_LUT0A Input Selection**.
 	* Select **Connect user to event channel 3** option from the dropdown menu as event user against the **USERCCLLUT2A: User Channel 3 CCL_LUT2A Input Selection**.
 	* Select **Connect user to event channel 3** option from the dropdown menu as event user against the **USERCCLLUT4A: User Channel 3 CCL_LUT4A Input Selection**.
+
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/L3S6hs6.jpg">
+</p>
+
 * Select **Configurable Custom Logic LUT0** option from the dropdown menu as event generator against the **CHANNEL4: Event Channel 4 Generator**. Select **Connect user to event channel 4** option from the dropdown menu as event user against the **USERCCLLUT2B: User Channel 4 CCL_LUT2B Input Selection**.
 * Select **Configurable Custom Logic LUT2** option from the dropdown menu as event generator against the **CHANNEL5: Event Channel 5 Generator**. Select **Connect user to event channel 5** option from the dropdown menu as event user against the **USERCCLLUT4B: User Channel 5 CCL_LUT4B Input Selection**.
 * Select **Configurable Custom Logic LUT4** option from the dropdown menu as event generator against the **CHANNEL6: Event Channel 6 Generator**. Select **Connect user to event channel 6** option from the dropdown menu as event user against the **USERCCLLUT0B: User Channel 6 CCL_LUT0B Input Selection**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/oG5vEdv.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/9WVb5Zs.jpg">
 </p>
+
 
 # CCL Configuration: 
 To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are configured together as a D-flipflop 0, LUT2 and LUT3 are configured together as a D-flipflop 1, LUT4 and LUT5 are configured together as a D-flipflop 2. Configure the CCL module by following the steps shown in the below figure.
 * Open the configuration window for CCL by clicking on **DIGITAL_GLUE_LOGIC_0**.
+
 <p align="center">
   <img width=auto height=auto src="https://imgur.com/AzpJkrG">
 </p>
+
 * Select **LUT0_IN/1** on pin **PA1, LUT0_OUT/0** on pin **PA3, LUT0_IN/2** on pin **PC2, LUT2_OUT/0** on pin **PD3, LUT3_IN/2** on pin **PF2, LUT4_OUT/0** on pin **PB3**.
+
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/snRm49v.jpg">
 </p>
+
 * Enable peripheral by selecting checkmark **ENABLE: Enable**.
 * Select **D Flipflop** option from the dropdown menu against the **SEQSEL0: Sequential Selection 0, SEQSEL1: Sequential Selection 1, SEQSEL2: Sequential Selection 2**.
+
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/IY6vJch.jpg">
 </p>
