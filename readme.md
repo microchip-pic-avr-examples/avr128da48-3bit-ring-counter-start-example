@@ -214,6 +214,11 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Select **Drivers: TCB: Init** option from the dropdown menu against the **Driver** field.
 * Select **TCB2** option from the dropdown menu against the **Instance** field.
 * Select **PB4** as output from the dropdown menu against the **WO/0** field.
+
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/ujInwit.jpg">
+</p>
+
 * Check the **Enable** option to enable the TCB2 module.
 * Select **CLK_PER/2 (From Prescaler)** option from the dropdown menu against the **CLKSEL:Clock Select** field.
 * Select **Single Shot mode** option from the dropdown menu against the **CNTMODE: Timer Mode** field.
@@ -222,10 +227,7 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Check the **CAPTEI: Event Input Enable** field.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/ujInwit.jpg">
-</p>
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/WBTsm7K.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/OGqrIMc.jpg">
 </p>
 
 
@@ -245,7 +247,7 @@ USART1 is used to transmit the three states of the ring counter on the terminal 
 * Set the **Baud Rate** to **9600**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/KEikk66.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/9CwZshZ.jpg">
 </p>
 
 
