@@ -214,11 +214,6 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Select **Drivers: TCB: Init** option from the dropdown menu against the **Driver** field.
 * Select **TCB2** option from the dropdown menu against the **Instance** field.
 * Select **PB4** as output from the dropdown menu against the **WO/0** field.
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/ujInwit.jpg">
-</p>
-
 * Check the **Enable** option to enable the TCB2 module.
 * Select **CLK_PER/2 (From Prescaler)** option from the dropdown menu against the **CLKSEL:Clock Select** field.
 * Select **Single Shot mode** option from the dropdown menu against the **CNTMODE: Timer Mode** field.
@@ -226,6 +221,9 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Check the CCMPEN: Pin Output Enable field. This will enable the Timer waveform output on the corresponding pin.
 * Check the **CAPTEI: Event Input Enable** field.
 
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/ujInwit.jpg">
+</p>
 <p align="center">
   <img width=auto height=auto src="https://i.imgur.com/WBTsm7K.jpg">
 </p>
@@ -279,7 +277,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Open the configuration window for CCL by clicking on **DIGITAL_GLUE_LOGIC_0**.
 
 <p align="center">
-  <img width=auto height=auto src="https://imgur.com/AzpJkrG">
+  <img width=auto height=auto src="https://i.imgur.com/AzpJkrG.jpg">
 </p>
 
 * Select **LUT0_IN/1** on pin **PA1, LUT0_OUT/0** on pin **PA3, LUT0_IN/2** on pin **PC2, LUT2_OUT/0** on pin **PD3, LUT3_IN/2** on pin **PF2, LUT4_OUT/0** on pin **PB3**.
