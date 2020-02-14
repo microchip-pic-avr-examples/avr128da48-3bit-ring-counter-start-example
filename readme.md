@@ -52,6 +52,11 @@ allowfullscreen></iframe>
 src=[![][https://i.imgur.com/WM8mRfR.jpg](https://www.youtube.com/embed/BYyyZrUc0Wo) frameborder="0"
 allowfullscreen></iframe>
 
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/WM8mRfR.jpg">
+  <br>Figure 3:AVR128DA48 Curiosity Nano board<br>
+</p>
+
 # Hardware
 
 ## AVR128DA48 Curiosity nano evaluation board 
