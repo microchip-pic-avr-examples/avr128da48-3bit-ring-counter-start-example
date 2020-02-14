@@ -53,7 +53,7 @@ src=[![][https://i.imgur.com/WM8mRfR.jpg](https://www.youtube.com/embed/BYyyZrUc
 allowfullscreen></iframe>
 
 <p align="center">
-  <img width=auto height=auto src=[![][https://i.imgur.com/WM8mRfR.jpg](https://www.youtube.com/embed/BYyyZrUc0Wo)
+  <img width=auto height=auto src=[![]["https://i.imgur.com/WM8mRfR.jpg"](https://www.youtube.com/embed/BYyyZrUc0Wo)
   <br>Figure 3:AVR128DA48 Curiosity Nano board<br>
 </p>
 
