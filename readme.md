@@ -46,6 +46,8 @@ In this example,
 
 [![Ring Counter](https://i.imgur.com/BGQhbWv.jpg)](https://youtu.be/zXW9ZzpTEMU)    
 
+<a href="https://i.imgur.com/BGQhbWv.jpg" target="_blank"><img src="https://youtu.be/zXW9ZzpTEMU"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 # Hardware
 
