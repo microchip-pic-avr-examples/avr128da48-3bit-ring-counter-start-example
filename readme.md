@@ -45,7 +45,7 @@ In this example,
 * The 3-bit ring counter data gets transferred to the terminal window of  data visualizer tool through mEDBG of the AVR128DA48 Curiosity Nano board.
 
 ## Video of the demo is available.Click on the below image
-[![Ring Counter](https://i.imgur.com/6AAM3Al.jpg)](https://youtu.be/BYyyZrUc0Wo)   
+[![Ring Counter](https://i.imgur.com/2lCFM4D.jpg)](https://youtu.be/BYyyZrUc0Wo)   
 
 # Hardware
 
