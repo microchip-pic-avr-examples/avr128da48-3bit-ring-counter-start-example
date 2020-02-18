@@ -44,16 +44,7 @@ In this example,
 * The on-board indication LED blinks, whenever a switch (SW0) press event is reported. 
 * The 3-bit ring counter data gets transferred to the terminal window of  data visualizer tool through mEDBG of the AVR128DA48 Curiosity Nano board.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BYyyZrUc0Wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BYyyZrUc0Wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=BYyyZrUc0Wo
-" target="_blank"><img src="http://img.youtube.com/vi/BYyyZrUc0Wo/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-
-
-[![Ring Counter](http://img.youtube.com/vi/BYyyZrUc0Wo/0.jpg)](https://youtu.be/BYyyZrUc0Wo)
+[![Ring Counter](https://i.imgur.com/BGQhbWv.jpg)](https://youtu.be/zXW9ZzpTEMU)    
 
 
 # Hardware
