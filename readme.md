@@ -173,19 +173,19 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
        * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/kjsVuay.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/JeZu7hP.jpg">
 </p>
 
 * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/ivjWZCz.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/88jkeEb.jpg">
 </p>
 
 * Configure pin **PA1** in output mode and feed as input signal to the first flipflop.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/8O2NWZn.jpg">
+  <img width=auto height=auto src="https://i.imgur.com/YufiC1H.jpg">
 </p>
 
 6.  Add Timer, Event system, USART and CCL peripheral drivers to the project
