@@ -49,7 +49,7 @@ In this example,
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=BYyyZrUc0Wo
 " target="_blank"><img src="https://i.imgur.com/2lCFM4D.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>  
+alt="IMAGE ALT TEXT HERE" width="500" height="300" border="10" /></a>  
 
 # Hardware
 
