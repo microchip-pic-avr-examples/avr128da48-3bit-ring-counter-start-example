@@ -2,7 +2,11 @@
 # Introduction  
 The Configurable Custom Logic (CCL) is a Core Independent Peripheral (CIP), which means it performs its tasks with no code or supervision from the CPU after configuration is completed. The CCL module is a programmable logic block and can be used to implement Combinational or Sequential logic functions. Since the logic functions implemented in the hardware have faster event response compared to the logic functions implemented in the software, the CCL gives the advantage of faster and predictable response to the users. This example demonstrates  3-bit ring counter implementation  using all 6 Look-Up-tables (LUTs) available with the CCL peripheral of AVR128DA48 MCU.
 
-**Note: This example could be generated with 48 and 64 pin AVR-DA devices.**
+**Note: * This example could be generated with 48 and 64 pin AVR-DA devices.**
+
+        * **This example is also generated using MCC and is available at the below location on GitHub.**
+https://github.com/microchip-pic-avr-examples/avr128da48-3bit-ring-counter-mcc-example.git
+
 
 # Basics of Ring Counter: 
 The ring counter is a type of counter composed of flipflops connected into a shift register, with the output of the last flipflop fed to the input of the first flipflop, making a circular or ring in structure. It is a synchronous counter which as a common clock signal that triggers all the flipflops at the same time. It is initialized such that only one of the flipflop output is 1 while the remainder is 0. Number of states of Ring counter is equal to number of flipflops used. To design three-bit ring counter, three flipflops are required. 
