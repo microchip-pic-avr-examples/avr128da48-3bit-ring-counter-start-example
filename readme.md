@@ -6,8 +6,8 @@ The Configurable Custom Logic (CCL) is a Core Independent Peripheral (CIP), whic
 
 **1.	 This example could be generated with 48 and 64 pin AVR-DA devices.**
 
-**2.	 This example is also generated using MCC and is available at the below location on GitHub.**
-https://github.com/microchip-pic-avr-examples/avr128da48-3bit-ring-counter-mcc-example.git
+**2.	 This example is also generated using START and is available on GitHub  at this location.**
+https://github.com/microchip-pic-avr-examples/avr128da48-3bit-ring-counter-start-example.git
 
 
 # Basics of Ring Counter: 
