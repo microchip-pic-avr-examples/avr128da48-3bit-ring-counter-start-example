@@ -1,40 +1,52 @@
-[![MCHP](https://cldup.com/U0qhLwBijF.png)](https://www.microchip.com)
-# Introduction  
+<!-- Please do not change this html logo with link -->
+<a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="300"/></a>
+
+## Introduction
+  
 The Configurable Custom Logic (CCL) is a Core Independent Peripheral (CIP), which means it performs its tasks with no code or supervision from the CPU after configuration is completed. The CCL module is a programmable logic block and can be used to implement Combinational or Sequential logic functions. Since the logic functions implemented in the hardware have faster event response compared to the logic functions implemented in the software, the CCL gives the advantage of faster and predictable response to the users. This example demonstrates  3-bit ring counter implementation  using all 6 Look-Up-tables (LUTs) available with the CCL peripheral of AVR128DA48 MCU.
 
-**Note:**
+**Note:** **This example could be generated with 48 and 64 pin AVR-DA devices.**
 
-**1.	 This example could be generated with 48 and 64 pin AVR-DA devices.**
+#### To see the 3bit ring counter demo operation video, click on the below image.
 
-**2.	 This example is also generated using MCC and is available on GitHub  at this location.**
-https://github.com/microchip-pic-avr-examples/avr128da48-3bit-ring-counter-mcc-example.git
+<p align="center">
+<br><a href="https://youtu.be/Z_syAVUn_zY" rel="nofollow"><img src="images/youtube.png" alt="AVR DA" width="500"/></a>
+</p>
+
+## Useful Links
+
+- [AVR128DA48 Product Page](https://www.microchip.com/wwwproducts/en/AVR128DA28 "AVR128DA48 Product Page")
+- [AVR128DA48 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=avr128da48 "AVR128DA48 Code Examples on GitHub")
+- [AVR128DA48 Project Examples in START](https://start.atmel.com/#examples/AVR128DA48CuriosityNano "AVR128DA48 Project Examples in START")
+- [3bit Ring Counter - MPLAB Example](https://github.com/microchip-pic-avr-examples/avr128da48-3bit-ring-counter-mcc-example.git "3bit Ring Counter - MPLAB Example")
 
 
-# Basics of Ring Counter: 
+## Basics of Ring Counter: 
 The ring counter is a type of counter composed of flipflops connected into a shift register, with the output of the last flipflop fed to the input of the first flipflop, making a circular or ring in structure. It is a synchronous counter which as a common clock signal that triggers all the flipflops at the same time. It is initialized such that only one of the flipflop output is 1 while the remainder is 0. Number of states of Ring counter is equal to number of flipflops used. To design three-bit ring counter, three flipflops are required. 
 
 The sequence of output from the three-bit ring counter is: 
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/kRH7WaT.jpg">
+  <img width=auto height=auto src="images/1.png">
+  <br><strong>Table 1: Output states of 3bit ring counter <br>
 </p>
 
-# Demo Description            
+## Demo Description            
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/R3jrhXA.jpg">
-  <br>Figure 1: Block diagram of three-bit Ring Counter <br>
+  <img width=auto height=auto src="images/2.png">
+  <br><strong>Fig 1: Block diagram of three-bit Ring Counter <br>
 </p>
                        
 In this example,
 * The AVR128DA48 Curiosity Nano board from Microchip is used to realize the 3-bit Ring Counter.
 * To realize 3-bit Ring Counter, 3 D flip-flops are required. A pair of LUTs is needed to realize one D flip-flop. All the 6 LUTs are used to realize 3 D flip-flops.
 * LUT0 and LUT1 are configured together as D flip-flop 0, LUT2 and LUT3 are configured together as D flip-flop 1, and LUT4 and LUT5 are configured together as D flip-flop 2.
-* These three D flip-flops are cascaded in such a way that output of D flip-flop 0 is fed to the input of D flip-flop 1, D flip-flop 1 output is fed to the D flip-flop 2 input and, D flip-flop 2 output is fed to the D flip-flop 0 input through Event system, to complete the required ring counter circuit as shown in below figure. 
+* These three D flip-flops are cascaded in such a way that output of D flip-flop 0 is fed to the input of D flip-flop 1, D flip-flop 1 output is fed to the D flip-flop 2 input and, D flip-flop 2 output is fed to the D flip-flop 0 input through Event system, to complete the required ring counter circuit as shown in below Fig 2. 
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/rkWOAJF.jpg">
-  <br>Figure 2:Cascaded connections of three D-flipflops <br>
+  <img width=auto height=auto src="images/3.png">
+  <br><strong>Fig 2:Cascaded connections of three D-flipflops <br>
 </p> 
 
 * The even LUTs (i.e. LUT0/LUT2/LUT4) are configured to produce custom logic gate. The output of the Timer B, which is used as a clock signal is applied only to even LUTs. 
@@ -50,62 +62,26 @@ In this example,
 * The on-board indication LED blinks, whenever a switch (SW0) press event is reported. 
 * The 3-bit ring counter data gets transferred to the terminal window of  data visualizer tool through mEDBG of the AVR128DA48 Curiosity Nano board.
 
-## To see the Ring Counter demo operation video, click on the below image.
+## Hardware used
 
+* AVR128DA48 Curiosity Nano Evaluation Kit [[Part Number:DM164151]](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164151 "[Part Number:DM164151]")
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=BYyyZrUc0Wo
-" target="_blank"><img src="https://i.imgur.com/2lCFM4D.jpg"
-alt="IMAGE ALT TEXT HERE" width="500" height="300" border="10" /></a>  
-
-# Hardware
-
-## AVR128DA48 Curiosity nano evaluation board 
-Curiosity Nano boards features a variety of PIC® and AVR® MCUs, allowing rapid prototyping and easy evaluation of the design. They also offer full programming and debugging capabilities to support throughout the development process. Featuring a low-power high memory AVR core and intelligent hardware peripherals, the AVR128DA48 curiosity nano is engineered for real-time control, automotive and IoT applications alike.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/WM8mRfR.jpg">
-  <br>Figure 3:AVR128DA48 Curiosity Nano board<br>
+  <img width=auto height=auto src="images/4.png">
+  <br><strong>Fig 3 : AVR128DA48 Curiosity Nano Evaluation Kit<br>
 </p>
 
-# Software Tools
-Microchip’s IDEs, compiler and graphical code generators are used throughout the application firmware development to provide an easy and hassle-free user experience. Following are the tools which are used for this demo application:
-* Atmel Studio v 7.0.2397
-* Atmel | START v 1.6.1894
+## Software Used
+- Atmel Studio 7.0.2397 [link](https://www.microchip.com/mplab/avr-support/atmel-studio-7 "link")
+- AVR/GNU C Compiler [link](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers "link")
+- Atmel START [link](https://www.microchip.com/mplab/avr-support/atmel-start "link")
+- AVR-Dx DFP 1.0.27
+- Standalone Data Visualizer v2.20.674 [link](https://www.microchip.com/mplab/avr-support/data-visualizer "link")
 
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
-# Atmel | START Project Creation
-
-Refer Appendix section for step by step instructions to configure the project through Atmel | START. 
-
-# Device Programming:
-1.	Open Atmel Studio.
-2.	Connect Curiosity nano board to computer via USB cable.
-3.	Go to Tools -> Device Programming.
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/kadRx4W.jpg">
-</p>
-
-4.	Select the Tool and click Apply.  
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/oQ1zXHd.jpg">
-</p>
-
-5.	Go to Memories tab and click on browse(…) button for Flash as shown in image below. Browse the location of the downloaded hex file and load the program.
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/m2lJfLR.jpg">
-</p>
-
-6.	Click Program and wait for finishing.
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/RllbjOu.jpg">
-</p>
-
-# Steps to open Terminal window in Data Visualizer:
+## Steps to open Terminal window in Data Visualizer:
 
 Open the Terminal window in Standalone Data Visualizer tool to observe the data of the ring counter and follow the below mentioned steps to open terminal window.
 
@@ -117,17 +93,17 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 6.	Click on the **Connect button**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/NJuNcu1.jpg">
+  <img width=auto height=auto src="images/5.png">
 </p>
 
-# Demo Operation:
+## Demo Operation:
 
 * After the Curiosity Nano board is powered on, load the firmware to AVR128DA48 MCU as explained in the Device Programming section.
 * Before each switch press, read the instructions provided on the terminal window. E.g. Press switch- To display first state of the Ring Counter.
 * Observe first state of the ring counter is displayed by default on the terminal window, only once at the start of the functionality, without a switch press event. The text displayed on the terminal window is “First state=1 0 0”.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/2nEZNgA.jpg">
+  <img width=auto height=auto src="images/6.png">
 </p>
 
 * After the first state is displayed on terminal window, user needs to wait for the next instruction to be displayed on terminal window. 
@@ -135,7 +111,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Observe the next instruction to the user is displayed on terminal window.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/21LNnQS.jpg">
+  <img width=auto height=auto src="images/7.png">
 </p>
 
 * Press Switch (SW0) to display the third state of the ring counter and observe the text “Third state = 0 0 1” is displayed on terminal window.
@@ -143,7 +119,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Press Switch (SW0) to display the first state of the ring counter on the terminal window.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/cZATP17.jpg">
+  <img width=auto height=auto src="images/8.png">
 </p>
 
 # Conclusion:
