@@ -27,7 +27,7 @@ The ring counter is a type of counter composed of flipflops connected into a shi
 The sequence of output from the three-bit ring counter is: 
 
 <p align="center">
-  <img width=700 height=auto src="images/1.png">
+  <img width=1000 height=auto src="images/1.png">
   <br><strong>Table 1: Output states of 3bit ring counter <br>
 </p>
 
@@ -45,7 +45,7 @@ In this example,
 * These three D flip-flops are cascaded in such a way that output of D flip-flop 0 is fed to the input of D flip-flop 1, D flip-flop 1 output is fed to the D flip-flop 2 input and, D flip-flop 2 output is fed to the D flip-flop 0 input through Event system, to complete the required ring counter circuit as shown in below Fig 2. 
 
 <p align="center">
-  <img width=700 height=auto src="images/3.png">
+  <img width=1000 height=auto src="images/3.png">
   <br><strong>Fig 2:Cascaded connections of three D-flipflops <br>
 </p> 
 
@@ -68,7 +68,7 @@ In this example,
 
 
 <p align="center">
-  <img width=500 height=auto src="images/4.png">
+  <img width=600 height=auto src="images/4.png">
   <br><strong>Fig 3 : AVR128DA48 Curiosity Nano Evaluation Kit<br>
 </p>
 
@@ -93,7 +93,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 6.	Click on the **Connect button**.
 
 <p align="center">
-  <img width=auto height=auto src="images/5.png">
+  <img width=500 height=auto src="images/5.png">
   <br><strong>Fig 4 : Standalone Data Visualizer window<br>
 </p>
 
@@ -104,7 +104,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Observe first state of the ring counter is displayed by default on the terminal window, only once at the start of the functionality, without a switch press event. The text displayed on the terminal window is “First state=1 0 0”.
 
 <p align="center">
-  <img width=auto height=auto src="images/6.png">
+  <img width=500 height=auto src="images/6.png">
   <br><strong>Fig 5 : Initial status on Terminal window<br>
 </p>
 
@@ -113,7 +113,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Observe the next instruction to the user is displayed on terminal window.
 
 <p align="center">
-  <img width=auto height=auto src="images/7.png">
+  <img width=500 height=auto src="images/7.png">
   <br><strong>Fig 6 : Second state on Terminal window<br>
 </p>
 
@@ -122,7 +122,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Press Switch (SW0) to display the first state of the ring counter on the terminal window.
 
 <p align="center">
-  <img width=auto height=auto src="images/8.png">
+  <img width=500 height=auto src="images/8.png">
   <br><strong>Fig 7 : Third state on Terminal window<br>
 </p>
 
@@ -140,27 +140,30 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 3.  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
 
 <p align="center">
-  <img width=auto height=auto src="images/9.png">
-  <br><strong>Fig 7 : Third state on Terminal window<br>
+  <img width=500 height=auto src="images/9.png">
+  <br><strong>Fig 8 : Create New Project<br>
 </p>
 
 4.   Open **PINMUX** configuration by clicking on![](https://i.imgur.com/CURVoP9.jpg) icon in the navigation tab, located on the left side of the window.
        * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
-  <img width=auto height=auto src="images/10.png">
+  <img width=500 height=auto src="images/10.png">
+  <br><strong>Fig 9 : PINMUX Configuration pin PC6<br>
 </p>
 
 * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
-  <img width=auto height=auto src="images/11.png">
+  <img width=500 height=auto src="images/11.png">
+  <br><strong>Fig 10 : PINMUX Configuration pin PC7<br>
 </p>
 
 * Configure pin **PA1** in input mode and feed as input signal to the first flipflop.
 
 <p align="center">
   <img width=auto height=auto src="images/12.png">
+  <br><strong>Fig 11 : PINMUX Configuration pin PA1<br>
 </p>
 
 6.  Add Timer, Event system, USART and CCL peripheral drivers to the project
@@ -172,6 +175,7 @@ open the **ADD SOFTWARE COMPONENTS** window by clicking![](https://i.imgur.com/X
 
 <p align="center">
   <img width=auto height=auto src="images/13.png">
+  <br><strong>Fig 12 : ADD SOFTWARE COMPONENTS<br>
 </p>
 
 
