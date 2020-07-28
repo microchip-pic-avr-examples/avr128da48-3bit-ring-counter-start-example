@@ -136,38 +136,26 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 3.  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/9yZrXFR.jpg">
+  <img width=auto height=auto src="images/9.png">
 </p>
 
-4.  After project creation,**MY SOFTWARE COMPONENTS** window opens. Rename the project by clicking on **MY PROJECT** in the **MY SOFTWARE COMPONENTS** window and then click on **Rename Component** as shown in Figure below.
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/JTAgcuG.jpg">
-</p>
-
-* The **RENAME COMPONENT** window appears and specify the new project name as **“THREE_BIT_RING_COUNTER”** and click rename as shown in figure below.
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/JSBMetO.jpg">
-</p>
-
-5.  Open **PINMUX** configuration by clicking on![](https://i.imgur.com/CURVoP9.jpg) icon in the navigation tab, located on the left side of the window.
+4.   Open **PINMUX** configuration by clicking on![](https://i.imgur.com/CURVoP9.jpg) icon in the navigation tab, located on the left side of the window.
        * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/JeZu7hP.jpg">
+  <img width=auto height=auto src="images/10.png">
 </p>
 
 * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/88jkeEb.jpg">
+  <img width=auto height=auto src="images/11.png">
 </p>
 
-* Configure pin **PA1** in output mode and feed as input signal to the first flipflop.
+* Configure pin **PA1** in input mode and feed as input signal to the first flipflop.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/YufiC1H.jpg">
+  <img width=auto height=auto src="images/12.png">
 </p>
 
 6.  Add Timer, Event system, USART and CCL peripheral drivers to the project
@@ -178,22 +166,9 @@ open the **ADD SOFTWARE COMPONENTS** window by clicking![](https://i.imgur.com/X
        * Add the respective drivers to the project by clicking the Add component(s).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/r5g29cX.jpg">
+  <img width=auto height=auto src="images/13.png">
 </p>
 
-7. Open the **CLOCK CONFIGURATOR** window by clicking![](https://i.imgur.com/8Nw4IRC.jpg) CLOCKS icon in the navigation tab, located at the left side of the window as shown in the below Figure.
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/R8JaeBK.jpg">
-</p>
-
-* Configure the **Main Clock (CLK_MAIN)** clock source by clicking **CLOCK SETTINGS**![](https://i.imgur.com/Im6tH2w.jpg)icon as shown in the above figure.
-* Check **Prescaler Enable** and set the **Prescaler division** value to **4** from the drop-down menu, which generates 1MHz frequency as a main clock, as shown in the below figure.
-* Close CLOCK SETTINGS by clicking the **Close** button.
-
-<p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/gFIhhVS.jpg">
-</p>
 
 # Timer B Configuration:
 Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it generates a Single pulse which is used as a Clock signal for all the three D flipflops. The output of all the three D-flipflops changes with respective to this clock signal.  Configure the Timer_0 module by following the steps shown in the below figure. 
@@ -203,7 +178,7 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Select **PB4** as output from the dropdown menu against the **WO/0** field.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/cKLEADp.jpg">
+  <img width=auto height=auto src="images/14.png">
 </p>
 
 * Check the **Enable** option to enable the TCB2 module.
@@ -214,7 +189,7 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Check the **CAPTEI: Event Input Enable** field.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/OGqrIMc.jpg">
+  <img width=auto height=auto src="images/15.png">
 </p>
 
 
@@ -226,7 +201,7 @@ USART1 is used to transmit the three states of the ring counter on the terminal 
 * Select **PC0** as output from the dropdown menu against the **TXD** field.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/64adlVy.jpg">
+  <img width=auto height=auto src="images/16.png">
 </p>
 
 * Check the **Printf support** option, which allows to print a sequence of characters.
@@ -234,7 +209,7 @@ USART1 is used to transmit the three states of the ring counter on the terminal 
 * Set the **Baud Rate** to **9600**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/9CwZshZ.jpg">
+  <img width=auto height=auto src="images/17.png">
 </p>
 
 
@@ -249,7 +224,7 @@ In this example, event system is used to connect the output of D-flipflop 0 to t
 	* Select **Connect user to event channel 3** option from the dropdown menu as event user against the **USERCCLLUT4A: User Channel 3 CCL_LUT4A Input Selection**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/L3S6hs6.jpg">
+  <img width=auto height=auto src="images/18.png">
 </p>
 
 * Select **Configurable Custom Logic LUT0** option from the dropdown menu as event generator against the **CHANNEL4: Event Channel 4 Generator**. Select **Connect user to event channel 4** option from the dropdown menu as event user against the **USERCCLLUT2B: User Channel 4 CCL_LUT2B Input Selection**.
@@ -257,7 +232,7 @@ In this example, event system is used to connect the output of D-flipflop 0 to t
 * Select **Configurable Custom Logic LUT4** option from the dropdown menu as event generator against the **CHANNEL6: Event Channel 6 Generator**. Select **Connect user to event channel 6** option from the dropdown menu as event user against the **USERCCLLUT0B: User Channel 6 CCL_LUT0B Input Selection**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/9WVb5Zs.jpg">
+  <img width=auto height=auto src="images/19.png">
 </p>
 
 
@@ -266,20 +241,20 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Open the configuration window for CCL by clicking on **DIGITAL_GLUE_LOGIC_0**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/AzpJkrG.jpg">
+  <img width=auto height=auto src="images/20.png">
 </p>
 
 * Select **LUT0_IN/1** on pin **PA1, LUT0_OUT/0** on pin **PA3, LUT0_IN/2** on pin **PC2, LUT2_OUT/0** on pin **PD3, LUT3_IN/2** on pin **PF2, LUT4_OUT/0** on pin **PB3**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/snRm49v.jpg">
+  <img width=auto height=auto src="images/21.png">
 </p>
 
 * Enable peripheral by selecting checkmark **ENABLE: Enable**.
 * Select **D Flipflop** option from the dropdown menu against the **SEQSEL0: Sequential Selection 0, SEQSEL1: Sequential Selection 1, SEQSEL2: Sequential Selection 2**.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/IY6vJch.jpg">
+  <img width=auto height=auto src="images/22.png">
 </p>
 
 ### Configurations to be done for LUT0:
@@ -292,7 +267,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH0: Truth 0** as **238** (or 0XEE).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/gmHiJOV.jpg">
+  <img width=auto height=auto src="images/23.png">
 </p>
 
 ### Configurations to be done for LUT1:
@@ -301,7 +276,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH1: Truth 1** as **16** (or 0X10).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/rXWEtkJ.jpg">
+  <img width=auto height=auto src="images/24.png">
 </p>
 
 ### Configurations to be done for LUT2:
@@ -313,7 +288,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH2: Truth 2** as **204** (or 0xCC).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/2CORspX.jpg">
+  <img width=auto height=auto src="images/25.png">
 </p>
 
 ### Configurations to be done for LUT3:
@@ -322,7 +297,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH3: Truth 3** as **16** (or 0X10).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/p5K8amh.jpg">
+  <img width=auto height=auto src="images/26.png">
 </p>
 
 ### Configurations to be done for LUT4:
@@ -334,7 +309,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH4: Truth 4** as **204** (or 0xCC).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/VwD5EVU.jpg">
+  <img width=auto height=auto src="images/27.png">
 </p>
 
 ### Configurations to be done for LUT5:
@@ -343,7 +318,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 * Enter truth table value **TRUTH5: Truth 5** as **16** (or 0X10).
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/EaEFNQ5.jpg">
+  <img width=auto height=auto src="images/28.png">
 </p>
 
 
