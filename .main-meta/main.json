@@ -3,28 +3,28 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.studio.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
+        "name": "com.microchip.mcu8.studio.project.avr128da48-3bit-ring-counter-start-example",
+        "version": "1.0.2",
+        "displayName": "3bit Ring Counter using AVR128DA48",
+        "projectName": "avr128da48-3bit-ring-counter-start-example",
         "shortDescription": "",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "Studio",
+            "semverRange": ">=7.0.2397"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+				"name": "Avr-Gcc",
+				"semverRange": "^5.4.0"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Dx_DFP",
+            "semverRange": "1.2.56"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "START",
+            "semverRange": "1.7.391"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,26 +32,40 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "avr128da48",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
+            "START",
             [
-               "Peripherals", ""
+               "Peripherals", "CCL"
             ],
             [
-               "Peripherals", ""
-            ]            			
+               "Peripherals", "EVENT SYSTEM"
+            ], 
+			[
+               "Peripherals", "USART"
+            ],
+			[
+               "Peripherals", "TCB"
+            ],
         ],
         "peripherals": [
-            "",""
+            "CCL","USART","TCB","EVENT SYSTEM"
         ],
         "keywords": [
-            "",
-            ""			
+            "START",
+            "3bit Ring Counter"
+			"Curiosity Nano Board"
+			"Flipflop"
+			"Sequential logic"
+			"Combinational"
+			"Logic gates"
+			"OR gate"
+			"AND gate"
+			"Digital"
         ],
 		"additionalData": {
 			"longDescription": {
