@@ -10,7 +10,7 @@ The Configurable Custom Logic (CCL) is a Core Independent Peripheral (CIP), whic
 #### To see the 3bit ring counter demo operation video, click on the below image.
 
 <p align="center">
-<br><a href="https://youtu.be/Z_syAVUn_zY" rel="nofollow"><img src="images/youtube.png" alt="AVR DA" width="500"/></a>
+<br><a href="https://youtu.be/BYyyZrUc0Wo" rel="nofollow"><img src="images/frontimageofvideo.png" alt="AVR DA" width="500"/></a>
 </p>
 
 ## Useful Links
@@ -27,7 +27,7 @@ The ring counter is a type of counter composed of flipflops connected into a shi
 The sequence of output from the three-bit ring counter is: 
 
 <p align="center">
-  <img width=auto height=auto src="images/1.png">
+  <img width=400 height=auto src="images/1.png">
   <br><strong>Table 1: Output states of 3bit ring counter <br>
 </p>
 
@@ -45,7 +45,7 @@ In this example,
 * These three D flip-flops are cascaded in such a way that output of D flip-flop 0 is fed to the input of D flip-flop 1, D flip-flop 1 output is fed to the D flip-flop 2 input and, D flip-flop 2 output is fed to the D flip-flop 0 input through Event system, to complete the required ring counter circuit as shown in below Fig 2. 
 
 <p align="center">
-  <img width=auto height=auto src="images/3.png">
+  <img width=400 height=auto src="images/3.png">
   <br><strong>Fig 2:Cascaded connections of three D-flipflops <br>
 </p> 
 
@@ -68,7 +68,7 @@ In this example,
 
 
 <p align="center">
-  <img width=auto height=auto src="images/4.png">
+  <img width=500 height=auto src="images/4.png">
   <br><strong>Fig 3 : AVR128DA48 Curiosity Nano Evaluation Kit<br>
 </p>
 
