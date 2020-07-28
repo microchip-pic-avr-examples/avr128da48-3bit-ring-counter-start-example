@@ -5,7 +5,7 @@
   
 The Configurable Custom Logic (CCL) is a Core Independent Peripheral (CIP), which means it performs its tasks with no code or supervision from the CPU after configuration is completed. The CCL module is a programmable logic block and can be used to implement Combinational or Sequential logic functions. Since the logic functions implemented in the hardware have faster event response compared to the logic functions implemented in the software, the CCL gives the advantage of faster and predictable response to the users. This example demonstrates  3-bit ring counter implementation  using all 6 Look-Up-tables (LUTs) available with the CCL peripheral of AVR128DA48 MCU.
 
-**Note:** **This example could be generated with 48 and 64 pin AVR-DA devices.**
+**Note:** ***This example could be generated with 48 and 64 pin AVR-DA devices.***
 
 #### To see the 3bit ring counter demo operation video, click on the below image.
 
@@ -27,7 +27,7 @@ The ring counter is a type of counter composed of flipflops connected into a shi
 The sequence of output from the three-bit ring counter is: 
 
 <p align="center">
-  <img width=400 height=auto src="images/1.png">
+  <img width=700 height=auto src="images/1.png">
   <br><strong>Table 1: Output states of 3bit ring counter <br>
 </p>
 
@@ -45,7 +45,7 @@ In this example,
 * These three D flip-flops are cascaded in such a way that output of D flip-flop 0 is fed to the input of D flip-flop 1, D flip-flop 1 output is fed to the D flip-flop 2 input and, D flip-flop 2 output is fed to the D flip-flop 0 input through Event system, to complete the required ring counter circuit as shown in below Fig 2. 
 
 <p align="center">
-  <img width=400 height=auto src="images/3.png">
+  <img width=700 height=auto src="images/3.png">
   <br><strong>Fig 2:Cascaded connections of three D-flipflops <br>
 </p> 
 
@@ -94,6 +94,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 
 <p align="center">
   <img width=auto height=auto src="images/5.png">
+  <br><strong>Fig 4 : Standalone Data Visualizer window<br>
 </p>
 
 ## Demo Operation:
@@ -104,6 +105,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 
 <p align="center">
   <img width=auto height=auto src="images/6.png">
+  <br><strong>Fig 5 : Initial status on Terminal window<br>
 </p>
 
 * After the first state is displayed on terminal window, user needs to wait for the next instruction to be displayed on terminal window. 
@@ -112,6 +114,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 
 <p align="center">
   <img width=auto height=auto src="images/7.png">
+  <br><strong>Fig 6 : Second state on Terminal window<br>
 </p>
 
 * Press Switch (SW0) to display the third state of the ring counter and observe the text “Third state = 0 0 1” is displayed on terminal window.
@@ -120,6 +123,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 
 <p align="center">
   <img width=auto height=auto src="images/8.png">
+  <br><strong>Fig 7 : Third state on Terminal window<br>
 </p>
 
 # Conclusion:
@@ -137,6 +141,7 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 
 <p align="center">
   <img width=auto height=auto src="images/9.png">
+  <br><strong>Fig 7 : Third state on Terminal window<br>
 </p>
 
 4.   Open **PINMUX** configuration by clicking on![](https://i.imgur.com/CURVoP9.jpg) icon in the navigation tab, located on the left side of the window.
