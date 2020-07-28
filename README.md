@@ -1,5 +1,5 @@
 <!-- Please do not change this html logo with link -->
-<a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="300"/></a>
+<a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="200"/></a>
 
 ## Introduction
   
@@ -104,7 +104,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Observe first state of the ring counter is displayed by default on the terminal window, only once at the start of the functionality, without a switch press event. The text displayed on the terminal window is “First state=1 0 0”.
 
 <p align="center">
-  <img width=850 height=auto src="images/6.png">
+  <img width=750 height=auto src="images/6.png">
   <br><strong>Fig 5 : Initial status on Terminal window<br>
 </p>
 
@@ -113,7 +113,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Observe the next instruction to the user is displayed on terminal window.
 
 <p align="center">
-  <img width=800 height=auto src="images/7.png">
+  <img width=750 height=auto src="images/7.png">
   <br><strong>Fig 6 : Second state on Terminal window<br>
 </p>
 
@@ -140,7 +140,7 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 3.  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
 
 <p align="center">
-  <img width=500 height=auto src="images/9.png">
+  <img width=800 height=auto src="images/9.png">
   <br><strong>Fig 8 : Create New Project<br>
 </p>
 
@@ -148,21 +148,21 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
        * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
-  <img width=500 height=auto src="images/10.png">
+  <img width=800 height=auto src="images/10.png">
   <br><strong>Fig 9 : PINMUX Configuration pin PC6<br>
 </p>
 
 * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
-  <img width=500 height=auto src="images/11.png">
+  <img width=800 height=auto src="images/11.png">
   <br><strong>Fig 10 : PINMUX Configuration pin PC7<br>
 </p>
 
 * Configure pin **PA1** in input mode and feed as input signal to the first flipflop.
 
 <p align="center">
-  <img width=auto height=auto src="images/12.png">
+  <img width=800 height=auto src="images/12.png">
   <br><strong>Fig 11 : PINMUX Configuration pin PA1<br>
 </p>
 
@@ -207,7 +207,7 @@ USART1 is used to transmit the three states of the ring counter on the terminal 
 * Set the **Baud Rate** to **9600**.
 
 <p align="center">
-  <img width=auto height=auto src="images/17.png">
+  <img width=auto height=auto src="images/16.png">
   <br><strong>Fig 14 : USART configuration window<br>
 </p>
 
@@ -224,6 +224,7 @@ In this example, event system is used to connect the output of D-flipflop 0 to t
 
 <p align="center">
   <img width=auto height=auto src="images/18.png">
+  <br><strong>Fig 15 : Event sytem configuration window 1<br>
 </p>
 
 * Select **Configurable Custom Logic LUT0** option from the dropdown menu as event generator against the **CHANNEL4: Event Channel 4 Generator**. Select **Connect user to event channel 4** option from the dropdown menu as event user against the **USERCCLLUT2B: User Channel 4 CCL_LUT2B Input Selection**.
@@ -232,6 +233,7 @@ In this example, event system is used to connect the output of D-flipflop 0 to t
 
 <p align="center">
   <img width=auto height=auto src="images/19.png">
+  <br><strong>Fig 16 : Event sytem configuration window 2<br>
 </p>
 
 
@@ -241,12 +243,14 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/20.png">
+  <br><strong>Fig 17 : CCL configuration window<br>
 </p>
 
 * Select **LUT0_IN/1** on pin **PA1, LUT0_OUT/0** on pin **PA3, LUT0_IN/2** on pin **PC2, LUT2_OUT/0** on pin **PD3, LUT3_IN/2** on pin **PF2, LUT4_OUT/0** on pin **PB3**.
 
 <p align="center">
   <img width=auto height=auto src="images/21.png">
+  <br><strong>Fig 18 : CCL Input and Output configuration window<br>
 </p>
 
 * Enable peripheral by selecting checkmark **ENABLE: Enable**.
@@ -254,6 +258,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/22.png">
+  <br><strong>Fig 19 : CCL Sequential selection window<br>
 </p>
 
 ### Configurations to be done for LUT0:
@@ -267,6 +272,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/23.png">
+  <br><strong>Fig 20 : LUT0 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT1:
@@ -276,6 +282,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/24.png">
+  <br><strong>Fig 21 : LUT1 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT2:
@@ -288,6 +295,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/25.png">
+  <br><strong>Fig 22 : LUT2 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT3:
@@ -297,6 +305,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/26.png">
+  <br><strong>Fig 23 : LUT3 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT4:
@@ -309,6 +318,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/27.png">
+  <br><strong>Fig 24 : LUT4 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT5:
@@ -318,6 +328,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/28.png">
+  <br><strong>Fig 25 : LUT5 configuration window<br>
 </p>
 
 
