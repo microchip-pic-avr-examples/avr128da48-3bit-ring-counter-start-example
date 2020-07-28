@@ -45,7 +45,7 @@ In this example,
 * These three D flip-flops are cascaded in such a way that output of D flip-flop 0 is fed to the input of D flip-flop 1, D flip-flop 1 output is fed to the D flip-flop 2 input and, D flip-flop 2 output is fed to the D flip-flop 0 input through Event system, to complete the required ring counter circuit as shown in below Fig 2. 
 
 <p align="center">
-  <img width=1000 height=auto src="images/3.png">
+  <img width=900 height=auto src="images/3.png">
   <br><strong>Fig 2:Cascaded connections of three D-flipflops <br>
 </p> 
 
@@ -93,7 +93,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 6.	Click on the **Connect button**.
 
 <p align="center">
-  <img width=500 height=auto src="images/5.png">
+  <img width=900 height=auto src="images/5.png">
   <br><strong>Fig 4 : Standalone Data Visualizer window<br>
 </p>
 
@@ -104,7 +104,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Observe first state of the ring counter is displayed by default on the terminal window, only once at the start of the functionality, without a switch press event. The text displayed on the terminal window is “First state=1 0 0”.
 
 <p align="center">
-  <img width=500 height=auto src="images/6.png">
+  <img width=850 height=auto src="images/6.png">
   <br><strong>Fig 5 : Initial status on Terminal window<br>
 </p>
 
@@ -113,7 +113,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Observe the next instruction to the user is displayed on terminal window.
 
 <p align="center">
-  <img width=500 height=auto src="images/7.png">
+  <img width=800 height=auto src="images/7.png">
   <br><strong>Fig 6 : Second state on Terminal window<br>
 </p>
 
@@ -122,7 +122,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 * Press Switch (SW0) to display the first state of the ring counter on the terminal window.
 
 <p align="center">
-  <img width=500 height=auto src="images/8.png">
+  <img width=750 height=auto src="images/8.png">
   <br><strong>Fig 7 : Third state on Terminal window<br>
 </p>
 
@@ -184,21 +184,17 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 * Open the configuration window for TIMER by clicking on **TIMER_0**.
 * Select **Drivers: TCB: Init** option from the dropdown menu against the **Driver** field.
 * Select **TCB2** option from the dropdown menu against the **Instance** field.
-* Select **PB4** as output from the dropdown menu against the **WO/0** field.
-
-<p align="center">
-  <img width=auto height=auto src="images/14.png">
-</p>
-
 * Check the **Enable** option to enable the TCB2 module.
 * Select **CLK_PER/2 (From Prescaler)** option from the dropdown menu against the **CLKSEL:Clock Select** field.
 * Select **Single Shot mode** option from the dropdown menu against the **CNTMODE: Timer Mode** field.
 * Enter value **0xfff** (which is equivalent to 4095) against **CCMP: Compare or Capture** field.
 * Check the CCMPEN: Pin Output Enable field. This will enable the Timer waveform output on the corresponding pin.
+* Select **PB4** as output from the dropdown menu against the **WO/0** field.
 * Check the **CAPTEI: Event Input Enable** field.
 
 <p align="center">
-  <img width=auto height=auto src="images/15.png">
+  <img width=auto height=auto src="images/14.png">
+  <br><strong>Fig 13 : Timer B configuration window<br>
 </p>
 
 
@@ -207,18 +203,12 @@ USART1 is used to transmit the three states of the ring counter on the terminal 
 * Open the configuration window for USART by clicking on **USART_0**.
 * Select **Drivers: USART: Basic** option from the dropdown menu against the **Driver** field.
 * Select **USART1** option from the dropdown menu against the **Instance** field.
-* Select **PC0** as output from the dropdown menu against the **TXD** field.
-
-<p align="center">
-  <img width=auto height=auto src="images/16.png">
-</p>
-
 * Check the **Printf support** option, which allows to print a sequence of characters.
-* Check the **Transmitter: Enable** option, which allows the data to transmit through USART peripheral.
 * Set the **Baud Rate** to **9600**.
 
 <p align="center">
   <img width=auto height=auto src="images/17.png">
+  <br><strong>Fig 14 : USART configuration window<br>
 </p>
 
 
