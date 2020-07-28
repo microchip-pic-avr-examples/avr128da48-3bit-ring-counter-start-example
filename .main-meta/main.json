@@ -7,7 +7,7 @@
         "version": "1.0.2",
         "displayName": "3bit Ring Counter using AVR128DA48",
         "projectName": "avr128da48-3bit-ring-counter-start-example",
-        "shortDescription": "",
+        "shortDescription": "This example demonstrates 3-bit ring counter implementation using CCL, Event system, USART and  Timer/Counter type B(TCB) modules of AVR128DA48 microcontroller",
         "ide": {
             "name": "Studio",
             "semverRange": ">=7.0.2397"
