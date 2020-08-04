@@ -56,7 +56,7 @@
             ]
         ],
         "peripherals": [
-            "CCL","USART","TCB","EVENT SYSTEM"
+            "CCL","USART","TCB","EVENT SYSTEM","GPIO"
         ],
         "keywords": [
             "3bit Ring Counter",
@@ -67,7 +67,7 @@
 			"Logic gates",
 			"OR gate",
 			"AND gate",
-			"Digital",
+			"Digital"
         ],
 		"additionalData": {
 			"longDescription": {
