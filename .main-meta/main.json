@@ -59,7 +59,6 @@
             "CCL","USART","TCB","EVENT SYSTEM"
         ],
         "keywords": [
-            "START",
             "3bit Ring Counter",
 			"Curiosity Nano Board",
 			"Flipflop",
