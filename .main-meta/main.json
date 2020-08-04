@@ -20,11 +20,11 @@
 		],
         "dfp": {
             "name": "AVR-Dx_DFP",
-            "semverRange": "1.2.56"
+            "semverRange": "^1.2.56"
         },
         "configurator": {
             "name": "START",
-            "semverRange": "1.7.391"
+            "semverRange": "^1.7.391"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -51,21 +51,24 @@
 			[
                "Peripherals", "TCB"
             ],
+                        [
+               "Peripherals", "GPIO"
+            ],
         ],
         "peripherals": [
             "CCL","USART","TCB","EVENT SYSTEM"
         ],
         "keywords": [
             "START",
-            "3bit Ring Counter"
-			"Curiosity Nano Board"
-			"Flipflop"
-			"Sequential logic"
-			"Combinational"
-			"Logic gates"
-			"OR gate"
-			"AND gate"
-			"Digital"
+            "3bit Ring Counter",
+			"Curiosity Nano Board",
+			"Flipflop",
+			"Sequential logic",
+			"Combinational",
+			"Logic gates",
+			"OR gate",
+			"AND gate",
+			"Digital",
         ],
 		"additionalData": {
 			"longDescription": {
