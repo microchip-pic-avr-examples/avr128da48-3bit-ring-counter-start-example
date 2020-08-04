@@ -32,7 +32,7 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "avr128da48",
+                "name": "AVR128DA48",
                 "versionRange": "*"
             }
         },
@@ -51,7 +51,7 @@
 			[
                "Peripherals", "TCB"
             ],
-                [
+            [
                "Peripherals", "GPIO"
             ]
         ],
