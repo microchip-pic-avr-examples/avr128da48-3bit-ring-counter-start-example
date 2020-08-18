@@ -140,37 +140,37 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 3.  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
 
 <p align="center">
-  <img width=800 height=auto src="images/9.png">
+  <img width=800 height=auto src="images/createProject.png">
   <br><strong>Fig 8 : Create New Project<br>
 </p>
 
-4.   Open **PINMUX** configuration by clicking on![](https://i.imgur.com/CURVoP9.jpg) icon in the navigation tab, located on the left side of the window.
+4.   Open **PINMUX** configuration by clicking on![](images/pinmuxIcon.png) icon in the navigation tab, located on the left side of the window.
        * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
-  <img width=800 height=auto src="images/10.png">
+  <img width=800 height=auto src="images/led.png">
   <br><strong>Fig 9 : PINMUX Configuration pin PC6<br>
 </p>
 
 * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
-  <img width=800 height=auto src="images/11.png">
+  <img width=800 height=auto src="images/switch.png">
   <br><strong>Fig 10 : PINMUX Configuration pin PC7<br>
 </p>
 
 * Configure pin **PA1** in input mode and feed as input signal to the first flipflop.
 
 <p align="center">
-  <img width=800 height=auto src="images/12.png">
+  <img width=800 height=auto src="images/inputSignal.png">
   <br><strong>Fig 11 : PINMUX Configuration pin PA1<br>
 </p>
 
 6.  Add Timer, Event system, USART and CCL peripheral drivers to the project
-       * Click![](https://i.imgur.com/7nFD1Ih.jpg) icon in the navigation tab, located on the left side of the window. Then, 
-open the **ADD SOFTWARE COMPONENTS** window by clicking![](https://i.imgur.com/Xwfz8pQ.jpg) icon.
+       * Click![](images/dashboard.png) icon in the navigation tab, located on the left side of the window. Then, 
+open the **ADD SOFTWARE COMPONENTS** window by clicking![](images/addSoftwareComponent.png) icon.
        * Expand Drivers by clicking + icon.
-       * To add respective drivers to the project  select Timer, Event System, CCL, USART and click on![](https://i.imgur.com/fPgSlm2.jpg) icon.
+       * To add respective drivers to the project  select Timer, Event System, CCL, USART and click on![](images/plusIcon.png) icon.
        * Add the respective drivers to the project by clicking the Add component(s).
 
 <p align="center">
