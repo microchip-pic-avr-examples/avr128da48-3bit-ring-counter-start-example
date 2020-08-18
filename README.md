@@ -30,14 +30,14 @@ The sequence of output from the three-bit ring counter is:
 
 <p align="center">
   <img width=1000 height=auto src="images/1.png">
-  <br>Table 1: Output states of 3bit ring counter <br>
+  <br>Table 1: Output states of 3-bit ring counter <br>
 </p>
 
 ## Demo Description            
 
 <p align="center">
   <img width=auto height=auto src="images/2.png">
-  <br>Fig 1: Block diagram of three-bit Ring Counter <br>
+  <br>Fig 1: Block diagram of 3-bit Ring Counter <br>
 </p>
                        
 In this example,
@@ -95,7 +95,7 @@ Open the Terminal window in Standalone Data Visualizer tool to observe the data 
 6.	Click on the **Connect button**.
 
 <p align="center">
-  <img width=900 height=auto src="images/5.png">
+  <img width=auto height=auto src="images/5.png">
   <br>Fig 4 : Standalone Data Visualizer window<br>
 </p>
 
