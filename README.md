@@ -168,7 +168,7 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
   <br><strong>Fig 11 : PINMUX Configuration pin PA1<br>
 </p>
 
-6.  Add Timer, Event system, USART and CCL peripheral drivers to the project
+5.  Add Timer, Event system, USART and CCL peripheral drivers to the project
        * Click![](images/dashboard.png) icon in the navigation tab, located on the left side of the window. Then, 
 open the **ADD SOFTWARE COMPONENTS** window by clicking![](images/addSoftwareComponent.png) icon.
        * Expand Drivers by clicking + icon.
@@ -178,6 +178,20 @@ open the **ADD SOFTWARE COMPONENTS** window by clicking![](images/addSoftwareCom
 <p align="center">
   <img width=auto height=auto src="images/13.png">
   <br><strong>Fig 12 : ADD SOFTWARE COMPONENTS<br>
+</p>
+
+6. Open the **CLOCK CONFIGURATOR** window by clicking![](images/clockIcon.png) CLOCKS icon in the navigation tab, located at the left side of the window as shown in the below Figure.
+
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/R8JaeBK.jpg">
+</p>
+
+* Configure the **Main Clock (CLK_MAIN)** clock source by clicking **CLOCK SETTINGS**![](https://i.imgur.com/Im6tH2w.jpg)icon as shown in the above figure.
+* Check **Prescaler Enable** and set the **Prescaler division** value to **4** from the drop-down menu, which generates 1MHz frequency as a main clock, as shown in the below figure.
+* Close CLOCK SETTINGS by clicking the **Close** button.
+
+<p align="center">
+  <img width=auto height=auto src="https://i.imgur.com/gFIhhVS.jpg">
 </p>
 
 
