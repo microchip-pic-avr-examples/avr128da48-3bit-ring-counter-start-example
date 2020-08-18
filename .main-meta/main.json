@@ -5,7 +5,7 @@
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.avr128da48-3bit-ring-counter-start-example",
         "version": "1.0.1",
-        "displayName": "3bit Ring Counter using AVR128DA48",
+        "displayName": "3-bit Ring Counter Studio example",
         "projectName": "avr128da48-3bit-ring-counter-start-example",
         "shortDescription": "This example demonstrates 3-bit ring counter implementation using CCL, Event system, USART and  Timer/Counter type B(TCB) modules of AVR128DA48 microcontroller",
         "ide": {
@@ -59,7 +59,10 @@
             "CCL","USART","TCB","EVENT SYSTEM","GPIO"
         ],
         "keywords": [
-            "3bit Ring Counter",
+		    "AVR128DA48",
+			"AVR DA",
+			"START",
+            "3-bit Ring Counter",
 			"Curiosity Nano Board",
 			"Flipflop",
 			"Sequential logic",
