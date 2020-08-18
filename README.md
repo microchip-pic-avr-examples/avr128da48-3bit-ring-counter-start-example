@@ -142,7 +142,7 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 3.  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
 
 <p align="center">
-  <img width=800 height=auto src="images/createProject.png">
+  <img width=auto height=auto src="images/createProject.png">
   <br><strong>Fig 8 : Create New Project<br>
 </p>
 
@@ -150,21 +150,21 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
        * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
-  <img width=800 height=auto src="images/led.png">
+  <img width=auto height=auto src="images/led.png">
   <br><strong>Fig 9 : PINMUX Configuration pin PC6<br>
 </p>
 
 * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
-  <img width=800 height=auto src="images/switch.png">
+  <img width=auto height=auto src="images/switch.png">
   <br><strong>Fig 10 : PINMUX Configuration pin PC7<br>
 </p>
 
 * Configure pin **PA1** in input mode and feed as input signal to the first flipflop.
 
 <p align="center">
-  <img width=800 height=auto src="images/inputSignal.png">
+  <img width=auto height=auto src="images/inputSignal.png">
   <br><strong>Fig 11 : PINMUX Configuration pin PA1<br>
 </p>
 
@@ -183,15 +183,17 @@ open the **ADD SOFTWARE COMPONENTS** window by clicking![](images/addSoftwareCom
 6. Open the **CLOCK CONFIGURATOR** window by clicking![](images/clockIcon.png) CLOCKS icon in the navigation tab, located at the left side of the window as shown in the below Figure.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/R8JaeBK.jpg">
+  <img width=auto height=auto src="images/clock.png">
+  <br><strong>Fig 13 : Clock configurator window<br>
 </p>
 
-* Configure the **Main Clock (CLK_MAIN)** clock source by clicking **CLOCK SETTINGS**![](https://i.imgur.com/Im6tH2w.jpg)icon as shown in the above figure.
+* Configure the **Main Clock (CLK_MAIN)** clock source by clicking **CLOCK SETTINGS**![](images/settingsIcon.png)icon as shown in the above figure.
 * Check **Prescaler Enable** and set the **Prescaler division** value to **4** from the drop-down menu, which generates 1MHz frequency as a main clock, as shown in the below figure.
 * Close CLOCK SETTINGS by clicking the **Close** button.
 
 <p align="center">
-  <img width=auto height=auto src="https://i.imgur.com/gFIhhVS.jpg">
+  <img width=auto height=auto src="images/clock.png">
+  <br><strong>Fig 14 : Clock settings<br>
 </p>
 
 
@@ -210,7 +212,7 @@ Timer B is a 16-bit Timer which is configured in a Single Shot Mode and it gener
 
 <p align="center">
   <img width=auto height=auto src="images/14.png">
-  <br><strong>Fig 13 : Timer B configuration window<br>
+  <br><strong>Fig 15 : Timer B configuration window<br>
 </p>
 
 
@@ -224,7 +226,7 @@ USART1 is used to transmit the three states of the ring counter on the terminal 
 
 <p align="center">
   <img width=auto height=auto src="images/16.png">
-  <br><strong>Fig 14 : USART configuration window<br>
+  <br><strong>Fig 16 : USART configuration window<br>
 </p>
 
 
@@ -240,7 +242,7 @@ In this example, event system is used to connect the output of D-flipflop 0 to t
 
 <p align="center">
   <img width=auto height=auto src="images/18.png">
-  <br><strong>Fig 15 : Event sytem configuration window 1<br>
+  <br><strong>Fig 17 : Event sytem configuration window 1<br>
 </p>
 
 * Select **Configurable Custom Logic LUT0** option from the dropdown menu as event generator against the **CHANNEL4: Event Channel 4 Generator**. Select **Connect user to event channel 4** option from the dropdown menu as event user against the **USERCCLLUT2B: User Channel 4 CCL_LUT2B Input Selection**.
@@ -249,7 +251,7 @@ In this example, event system is used to connect the output of D-flipflop 0 to t
 
 <p align="center">
   <img width=auto height=auto src="images/19.png">
-  <br><strong>Fig 16 : Event sytem configuration window 2<br>
+  <br><strong>Fig 18 : Event sytem configuration window 2<br>
 </p>
 
 
@@ -259,14 +261,14 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/20.png">
-  <br><strong>Fig 17 : CCL configuration window<br>
+  <br><strong>Fig 19 : CCL configuration window<br>
 </p>
 
 * Select **LUT0_IN/1** on pin **PA1, LUT0_OUT/0** on pin **PA3, LUT0_IN/2** on pin **PC2, LUT2_OUT/0** on pin **PD3, LUT3_IN/2** on pin **PF2, LUT4_OUT/0** on pin **PB3**.
 
 <p align="center">
   <img width=auto height=auto src="images/21.png">
-  <br><strong>Fig 18 : CCL Input and Output configuration window<br>
+  <br><strong>Fig 20 : CCL Input and Output configuration window<br>
 </p>
 
 * Enable peripheral by selecting checkmark **ENABLE: Enable**.
@@ -274,7 +276,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/22.png">
-  <br><strong>Fig 19 : CCL Sequential selection window<br>
+  <br><strong>Fig 21 : CCL Sequential selection window<br>
 </p>
 
 ### Configurations to be done for LUT0:
@@ -288,7 +290,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/23.png">
-  <br><strong>Fig 20 : LUT0 configuration window<br>
+  <br><strong>Fig 22 : LUT0 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT1:
@@ -298,7 +300,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/24.png">
-  <br><strong>Fig 21 : LUT1 configuration window<br>
+  <br><strong>Fig 23 : LUT1 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT2:
@@ -311,7 +313,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/25.png">
-  <br><strong>Fig 22 : LUT2 configuration window<br>
+  <br><strong>Fig 24 : LUT2 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT3:
@@ -321,7 +323,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/26.png">
-  <br><strong>Fig 23 : LUT3 configuration window<br>
+  <br><strong>Fig 25 : LUT3 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT4:
@@ -334,7 +336,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/27.png">
-  <br><strong>Fig 24 : LUT4 configuration window<br>
+  <br><strong>Fig 26 : LUT4 configuration window<br>
 </p>
 
 ### Configurations to be done for LUT5:
@@ -344,7 +346,7 @@ To realize this example 3 D-flipflops are required. In CCL, LUT0 and LUT1 are co
 
 <p align="center">
   <img width=auto height=auto src="images/28.png">
-  <br><strong>Fig 25 : LUT5 configuration window<br>
+  <br><strong>Fig 27 : LUT5 configuration window<br>
 </p>
 
 
