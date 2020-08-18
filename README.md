@@ -142,7 +142,7 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
 3.  The **CREATE NEW PROJECT** window appears within Atmel Studio 7.In the **"Filter on device..."** text box, enter **AVR128DA48**, then select **AVR128DA48 Curiosity Nano** from the list and then click on **CREATE NEW PROJECT**, as shown below.Wait until project creation is completed.
 
 <p align="center">
-  <img width=1000 height=auto src="images/createProject.png">
+  <img width=auto height=auto src="images/createProject.png">
   <br>Fig 8 : Create New Project<br>
 </p>
 
@@ -150,14 +150,14 @@ Configure CCL, Event system, Timer, GPIO, Pin change interrupt, USART peripheral
        * Pin **PC6** is configured as output to control **LED**, which is available on AVR128DA48 Curiosity nano board. When on-board switch (SW0) of CNANO is pressed, the LED blinks to indicate the user that switch is pressed.
 
 <p align="center">
-  <img width=900 height=auto src="images/led.png">
+  <img width=auto height=auto src="images/led.png">
   <br>Fig 9 : PINMUX Configuration pin PC6<br>
 </p>
 
 * Pin **PC7** is configured in advanced mode to detect switch press events, which is available on AVR128DA48 Curiosity nano board.
 
 <p align="center">
-  <img width=950 height=auto src="images/switch.png">
+  <img width=auto height=auto src="images/switch.png">
   <br>Fig 10 : PINMUX Configuration pin PC7<br>
 </p>
 
